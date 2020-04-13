@@ -4,11 +4,33 @@
       "Language": "English",
       "Files": [
         {
-          "RawFilePath": "https://raw.githubusercontent.com/SpektraSystems/WVD-Labs/master/create-and-manage-wvd-and-remote-apps/Readme.md",
+          "RawFilePath": "https://raw.githubusercontent.com/SpektraSystems/WVD-Labs/master/Readme.md",
           "Order": 1
-  
-        }
-      
+        },
+        {
+          "RawFilePath": "https://raw.githubusercontent.com/SpektraSystems/WVD-Labs/master/00-Introduction.md",
+          "Order": 2
+        },
+        {
+          "RawFilePath": "https://raw.githubusercontent.com/SpektraSystems/WVD-Labs/master/01-Prepare-the-virtual-machine.md",
+          "Order": 3
+        },
+          {
+          "RawFilePath": "https://raw.githubusercontent.com/SpektraSystems/WVD-Labs/master/02-create-hostpool-with-powershell.md",
+          "Order": 4
+        },
+          {
+          "RawFilePath": "https://raw.githubusercontent.com/SpektraSystems/WVD-Labs/master/03-register-the-vm.md",
+          "Order": 5
+        },
+          {
+          "RawFilePath": "https://raw.githubusercontent.com/SpektraSystems/WVD-Labs/master/04-remote-apps.md",
+          "Order": 6
+        },
+          {
+          "RawFilePath": "https://raw.githubusercontent.com/SpektraSystems/WVD-Labs/master/05-conclusion.md",
+          "Order": 7
+        }      
       ]
     }
   ]
