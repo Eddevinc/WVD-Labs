@@ -1,4 +1,4 @@
-# WVD Labs
+# Windows Virtual Desktop
 
 ## Overview 
 
