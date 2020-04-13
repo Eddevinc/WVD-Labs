@@ -13,9 +13,9 @@
 
 1.  Provide the following values and connect to the VM: 
 
-       Username: **rdshuser**
+        Username: **rdshuser**
 
-       Password: **demoPassword1!!** 
+        Password: **demoPassword1!!** 
        
 
   # On the RDSH Server, Download and install the Windows Virtual Desktop Agent. 
@@ -24,7 +24,7 @@
 
 1.  Download the **Windows Virtual Desktop Agent** 
 
-       **https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWrmXv**
+        **https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWrmXv**
        
 1. Run the installer 
 
@@ -32,7 +32,7 @@
 
 1.  Download and install the **Windows Virtual Desktop Agent Bootloader** 
 
-   **https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWrxrH**
+        **https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWrxrH**
 
 1. Run the installer 
 
@@ -43,9 +43,9 @@
 
 1.  We can view details about our hostpool by running the following 
 
-       **Get-RdsSessionHost -TenantName $tenant -HostPoolName $hostpoolname** 
+        **Get-RdsSessionHost -TenantName $tenant -HostPoolName $hostpoolname** 
 
-       **Note**: Wait for agents to update  ~5 mins 
+        **Note**: Wait for agents to update  ~5 mins 
 
 1. When the host pool **Status** is **Available**, continue to the next section 
 
@@ -62,9 +62,9 @@
 
 1.  Click on **WS 2019**, click **Allow**, and log in with: 
 
-      Username: Copy the value of "**WVD User 1**" from the user environment details page and enter it here
+        Username: Copy the value of "**WVD User 1**" from the user environment details page and enter it here
 
-      Password: Copy the password of "**WVD User 1**" from the user environment details page and enter it here
+        Password: Copy the password of "**WVD User 1**" from the user environment details page and enter it here
 
 1.  Once connected to the desktop, open task manager 
 
