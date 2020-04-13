@@ -33,12 +33,13 @@ To quickly download and install the Windows Virtual Desktop PowerShell module,
   First let’s define some variables for the tenant and pool name, run the following commands to define the variables
   
   
- 4. Replace  **"[DeploymentId]"** with **" UserId"**. 
-    Note: UserId will be the xxxxx in odl_user_xxxxx@msazurelabs.onmicrosoft.com 
+ 4. Replace the **Wvd tenant name** from the environment details page 
+    
+     **Note**: Wvd tenant name is like wvdtrainingtenantxxxxxx where xxxxxx is the deployment Id
 
     ```sql
        $tenant = "wvdtrainingtenant[DeploymentId]" 
-       $hostpoolname = "[hostpool1]"
+       $hostpoolname = "hostpool1"
      ```
   
  5. Run the following cmdlet to sign into the Windows Virtual Desktop  environment. 
@@ -53,7 +54,7 @@ To quickly download and install the Windows Virtual Desktop PowerShell module,
 
       **New-RdsHostPool -TenantName $tenant -Name $hostpoolname** 
 
- 9. Run the next cmdlet to create **aregistration token** to authorize a session host to join the host pool and save it to a new file on     your local computer. You can specify how long the registration token is valid by using the -ExpirationHours parameter. 
+ 9. Run the next cmdlet to create **a registration token** to authorize a session host to join the host pool and save it to a new file on     your local computer. You can specify how long the registration token is valid by using the -ExpirationHours parameter. 
     
      ```sql
 
@@ -66,7 +67,7 @@ To quickly download and install the Windows Virtual Desktop PowerShell module,
 10. Replace **"[userupn]"** with "**WVD User 1** from the environment details page 
        
      ```sql
-       "Add-RdsAppGroupUser -TenantName $tenant -HostPoolName $hostpoolname -AppGroupName "Desktop Application Group" -UserPrincipalName "<userupn>"
+       Add-RdsAppGroupUser -TenantName $tenant -HostPoolName $hostpoolname -AppGroupName "Desktop Application Group" -UserPrincipalName "<userupn>"
        
       ```
 
