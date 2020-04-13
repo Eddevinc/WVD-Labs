@@ -28,7 +28,7 @@
        
 1. Run the installer 
 
-1.  When the installer asks you for the registration token, copy and paste in the value exported to the desktop file **token** in the previous step #10 
+1.  When the installer asks you for the registration token, copy and paste in the value exported to the desktop file **token** in the previous step
 
 1.  Download and install the **Windows Virtual Desktop Agent Bootloader** 
 
