@@ -51,10 +51,10 @@ New-RdsRemoteApp -TenantName $tenant -HostPoolName $hostpoolname -AppGroupName W
 
 7.  Now that we've created a remote app group and published the Wordpad app we can assign access to the group. 
 
-8. Replace **"[userupn]"** with "**WVD User 2**" from the environment details page
+8. Replace **"[wvduser2upn]"** with "**WVD User 2**" from the environment details page
 
      ```sql
-      Add-RdsAppGroupUser -TenantName $tenant -HostPoolName $hostpoolname -AppGroupName Wordpad -UserPrincipalName "[userupn]"
+      Add-RdsAppGroupUser -TenantName $tenant -HostPoolName $hostpoolname -AppGroupName Wordpad -UserPrincipalName "[wvduser2upn]"
      ```  
        
      Now that we've created a remote app and assigned access we can log in to the web client and open our published applications.
