@@ -44,7 +44,9 @@ To quickly download and install the Windows Virtual Desktop PowerShell module,
   
  5. Run the following cmdlet to sign into the Windows Virtual Desktop  environment. 
        
-       **Add-RdsAccount -DeploymentUrl "https://rdbroker.wvd.microsoft.com"**
+       ```sql
+       Add-RdsAccount -DeploymentUrl "https://rdbroker.wvd.microsoft.com"
+       ```
        
  6. In the **Email, phone, or Skype box**, type  <inject key="AzureAdUserEmail" />  or copy from the Azure Credentials in Environment Details tab and click **Next**
        
