@@ -54,7 +54,9 @@ To quickly download and install the Windows Virtual Desktop PowerShell module,
 
  8.  Next, run this cmdlet to create a new host pool in your Windows Virtual Desktop tenant: 
 
-      **New-RdsHostPool -TenantName $tenant -Name $hostpoolname** 
+      ```sql
+      New-RdsHostPool -TenantName $tenant -Name $hostpoolname
+      ```
 
  9. Run the next cmdlet to create **a registration token** to authorize a session host to join the host pool and save it to a new file on     your local computer. You can specify how long the registration token is valid by using the -ExpirationHours parameter. 
     
@@ -66,10 +68,10 @@ To quickly download and install the Windows Virtual Desktop PowerShell module,
 
        After that, run this cmdlet to add Azure Active Directory users to the default desktop app group for the host pool. 
 
-10. Replace **"[userupn]"** with "**WVD User 1** from the environment details page 
+10. Replace **"[wvduser1upn]"** with "**WVD User 1** from the environment details page 
        
      ```sql
-       Add-RdsAppGroupUser -TenantName $tenant -HostPoolName $hostpoolname -AppGroupName "Desktop Application Group" -UserPrincipalName "<userupn>"
+       Add-RdsAppGroupUser -TenantName $tenant -HostPoolName $hostpoolname -AppGroupName "Desktop Application Group" -UserPrincipalName "[wvduser1upn]"
        
       ```
 
