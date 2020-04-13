@@ -46,9 +46,9 @@ To quickly download and install the Windows Virtual Desktop PowerShell module,
        
        **Add-RdsAccount -DeploymentUrl "https://rdbroker.wvd.microsoft.com"**
        
- 6. In the **Email, phone, or Skype box**, type  <inject key="AzureAdUserEmail" /> and click **Next**
+ 6. In the **Email, phone, or Skype box**, type  <inject key="AzureAdUserEmail" />  or copy from the Azure Credentials in Environment Details tab and click **Next**
        
- 7. In the **Password** box, type <inject key="AzureAdUserPassword" /> and click **Sign in**Next 
+ 7. In the **Password** box, type <inject key="AzureAdUserPassword" /> or copy from the Azure Credentials in Environment Details tab and click **Sign in** Next 
 
  8.  Next, run this cmdlet to create a new host pool in your Windows Virtual Desktop tenant: 
 
