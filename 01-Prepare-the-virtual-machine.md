@@ -7,4 +7,4 @@ You need to do the following things to prepare your virtual machines before you 
 
 - You must install the Remote Desktop Session Host (RDSH) role if the virtual machine is running a Windows Server OS. The RDSH role allows the Windows Virtual Desktop agents to install properly. 
 
-**Note**: Because these steps require a reboot, the steps have already been performed for you, to save time. 
+**Note**: Because these steps require a reboot, the **pre-requisite steps have already been performed** for you, to save time. 
