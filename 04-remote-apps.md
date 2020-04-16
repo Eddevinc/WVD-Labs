@@ -20,19 +20,22 @@
         New-RdsAppGroup -TenantName $tenant -HostPoolName $hostpoolname -Name Wordpad -ResourceType 
        RemoteApp
        ```
+      ![rdscreate.](media/8.png)
 
 2.  To see a list of available applications in the host pool run the following command. 
 
       ```sql
       Get-RdsStartMenuApp -TenantName $tenant -HostPoolName $hostpoolname -AppGroupName Wordpad
       ```
-      
+    ![list rds.](media/9.png)
+
 3.  We can search for specific apps, and in this exercise we want to search for and create a remote app for our Wordpad users. 
 
       ```sql
      Get-RdsStartMenuApp -TenantName $tenant -HostPoolName $hostpoolname -AppGroupName Wordpad | ?{$_.FriendlyName -match "Wordpad"}
       ```
-      
+    ![list wordpad.](media/10.png)
+ 
 4.  In the next step, we will use the FilePath, IconPath, and IconIndex fto create our Wordpad Desktop remote app 
 
 5. To add the Wordpad application to the remote app group run the following cmdlet.
@@ -40,13 +43,15 @@
 ```json
 New-RdsRemoteApp -TenantName $tenant -HostPoolName $hostpoolname -AppGroupName Wordpad -Name Wordpad -Filepath "C:\Program Files\Windows NT\Accessories\wordpad.exe" -IconPath "C:\Program Files\Windows NT\Accessories\wordpad.exe"
 ```
-       
+   ![newrdsremoteapp.](media/11.png)
+
 6. Verify the app was published to the remote app group.
 
      ```sql
      Get-RdsRemoteApp -TenantName $tenant -HostPoolName $hostpoolname -AppGroupName Wordpad
      ```
-     
+    ![getrds.](media/12.png)
+
      **Note**: You can add additional apps to this remote app group by repeating the above steps. 
 
 7.  Now that we've created a remote app group and published the Wordpad app we can assign access to the group. 
@@ -77,4 +82,7 @@ New-RdsRemoteApp -TenantName $tenant -HostPoolName $hostpoolname -AppGroupName W
       Username: Copy the email id of "**WVD User 2**" from the user environment details page and enter it here
 
       Password: Copy the password of "**WVD User 2**" from the user environment details page and enter it here
+      
+   ![wordpad.](media/7.png)
+
       
