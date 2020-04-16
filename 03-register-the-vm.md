@@ -30,6 +30,8 @@
 
 1.  When the installer asks you for the registration token, copy and paste in the value exported to the desktop file **token** in the previous step
 
+   ![token.](media/2.png)
+
 1.  Download and install the **Windows Virtual Desktop Agent Bootloader** 
 
        **https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWrxrH**
@@ -49,6 +51,7 @@
 
 1. When the host pool **Status** is **Available**, continue to the next section 
 
+   ![status.](media/3.png)
 
   # Sign in to host pool interface 
 
@@ -62,14 +65,20 @@
 
 1.  Click on **WS 2019**, click **Allow**, and log in with: 
 
+   ![ws allow.](media/4.png)
+    
        Username: Copy the value of "**WVD User 1**" from the user environment details page and enter it here
 
        Password: Copy the password of "**WVD User 1**" from the user environment details page and enter it here
 
 1.  Once connected to the desktop, open task manager 
 
-1. In task manager, click the More details button and then click on the Users tab, notice that your current user **WVD User 1** is connected to the RDSH server. 
+1. In task manager, click the More details button and then click on the Users tab, notice that your current user **WVD User 1** is connected to the RDSH server.
 
+   ![more details.](media/5.png)
+  
+   ![wvd user1.](media/6.png)
+  
       You have now logged in to the Windows Server 2019 RDSH session host.
        
        
